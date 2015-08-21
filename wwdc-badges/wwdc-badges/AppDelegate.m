@@ -24,6 +24,13 @@
         NSLog(@"Hello, my name is %@", conferenceSpeakers[i]);
     }
     
+    NSArray *speakersFirstNames = @[@"Anita", @"Alan", @"Ada", @"Aaron", @"Alan", @"Michael", @"Grace", @"Charles"];
+    NSArray *speakersLastNames = @[@"Borg", @"Kay", @"Lovelace", @"Swartz", @"Turing", @"Faraday", @"Hopper", @"Babbage"];
+    
+    for (NSUInteger i = 0; i < [conferenceSpeakers count]; i++) {
+        NSLog(@"Hello, my name is %@ %@", speakersFirstNames[i], speakersLastNames[i]);
+    }
+    
     return YES;
 }
 
